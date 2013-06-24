@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>XML To EARMARK conversion tool</title>
+            <link href="http://www.essepuntato.it/css/lode/owl.css" rel="stylesheet" type="text/css" />
+            <link href="http://www.essepuntato.it/css/lode/Primer.css" rel="stylesheet" type="text/css" />
+            <link href="http://www.essepuntato.it/css/lode/rec.css" rel="stylesheet" type="text/css" />
+            <link href="http://www.essepuntato.it/css/lode/extra.css" rel="stylesheet" type="text/css" />
+            <style type="text/css">
+            body {
+                background-image: none;
+            }
+            
+            input[type=text] {
+            	width: 500px;
+            }
+            input[type=submit] {
+            	width: 100px;
+            }
+            textarea {
+            	width: 700px;
+            	height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>XML To EARMARK conversion tool</h1>
+        <p>
+            <em>XML2EARMARK</em> is a web tool that allows to convert an XML document into an 
+            <a href="http://www.essepuntato.it/2008/12/earmark">EARMARK</a> document encoded in RDF/XML. 
+        </p>
+        <h2>Use your XML source</h2>
+        <p>Put your XML source in the following textual area and submit it to get the EARMARK conversion of your document.</p>
+        <form action="transform" method="post" accept-charset="UTF-8">
+            <div><textarea id="content" name="content" cols="5" rows="5">&lt;?xml version="1.0" ?> <!-- Put your XML source here --></textarea></div>
+            <p><input type="submit" /></p>
+        </form>
+        <h2>From an URL</h2>
+        <p>Specify the URL of an XML document and submit it to get the EARMARK conversion of your document.</p>
+        <form action="transform" method="get">
+            <div><label for="url">URL:</label>
+            <input type="text" name="url" id="url" />
+            <input type="submit" /></div>
+        </form>
+        
+    </body>
+</html>
